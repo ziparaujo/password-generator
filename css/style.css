@@ -1,0 +1,133 @@
+:root {
+  --bg-color: #0f0e11;
+  --bg-color-gray: #29272f;
+  --gray-color: #55535b;
+  --green-color: #49fc5e;
+  --yellow-color: #f7d06e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+}
+
+h1 {
+  color: var(--gray-color);
+  font-size: 1.25rem;
+  padding: 15px;
+  font-weight: 400;
+}
+
+.password {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px;
+  min-width: 250px;
+  background-color: var(--bg-color-gray);
+  margin-bottom: 15px;
+}
+
+.password p {
+  color: var(--gray-color);
+  font-weight: 700;
+}
+
+.password i {
+  color: var(--green-color);
+  cursor: pointer;
+}
+
+.container-options {
+  background-color: var(--bg-color-gray);
+  min-width: 250px;
+  padding: 13px;
+}
+
+.length-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#inputLength {
+  flex: 1 0 100%;
+  -webkit-appearance: none;
+  height: 4px;
+  outline: none;
+  background-color: var(--bg-color);
+  margin: 10px 0 15px;
+}
+
+#inputLength::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  box-shadow: .2px .8px 1px 1px #000;
+}
+
+.length-options p {
+  color: #fff;
+  margin: 10px 0;
+  font-size: .875rem;
+}
+
+.length-options label {
+  align-self: center;
+  font-size: 1.5rem;
+  color: var(--green-color);
+}
+
+.option-item {
+  margin: 7px 0;
+}
+
+.option-item label {
+  color: #fff;
+}
+
+#strength {
+  background-color: var(--bg-color);
+  padding: 12px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#strength p {
+  text-transform: uppercase;
+  color: var(--gray-color);
+}
+
+.force span {
+  display: inline-block;
+  width: 3px;
+  height: 15px;
+  border: 1px solid #fff;
+}
+
+#generate {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: #49fc5e;
+  color: var(--bg-color);
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: -.7px;
+  font-weight: 700;
+}

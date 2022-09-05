@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Password Generator</title>
+</head>
+<body>
+  <main>
+    <h1>Password Generator</h1>
+
+    <div class="password">
+      <p>P4$5W0rD!</p>
+      <i class="fa-regular fa-copy"></i>
+    </div>
+
+    <div class="container-options">
+      <div class="length-options">
+        <p>Character Length</p>
+        <label for="inputLength">0</label>
+        <input id="inputLength" type="range" min="0" max="24" value="0">
+      </div>
+
+      <div class="options">
+        <div class="option-item">
+          <input id="checkLower" type="checkbox">
+          <label for="checkLower">Include Lowercase Letters</label>
+        </div>
+        <div class="option-item">
+          <input id="checkUpper" type="checkbox">
+          <label for="checkUpper">Include Uppercase Letters</label>
+        </div>
+        <div class="option-item">
+          <input id="checkNumbers" type="checkbox">
+          <label for="checkNumbers">Include Numbers</label>
+        </div>
+        <div class="option-item">
+          <input id="checkSimbols" type="checkbox">
+          <label for="checkSimbols">Include Simbols</label>
+        </div>
+      </div>
+
+      <div id="strength">
+        <p>Strength</p>
+        <div class="force">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      
+      <button id="generate">Generate ➔</button>
+    </div>
+
+  </main>
+  <script src="https://kit.fontawesome.com/40ea0ad0b4.js" crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
