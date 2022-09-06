@@ -131,3 +131,7 @@ h1 {
   letter-spacing: -.7px;
   font-weight: 700;
 }
+
+.ativo {
+  background-color: var(--yellow-color);
+}
