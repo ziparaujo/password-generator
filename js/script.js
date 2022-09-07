@@ -5,6 +5,7 @@ const inputLength = document.querySelector('.length-options label')
 const button = document.getElementById('generate');
 const force = document.querySelectorAll('.force span');
 const options = document.querySelectorAll('.option-item');
+const copied = document.querySelector('.copied');
 
 const checkLower = document.getElementById('checkLower');
 const checkUpper = document.getElementById('checkUpper');
@@ -53,6 +54,10 @@ button.addEventListener('click', () => generator(
   
 const copyToClipboard = () => {
   navigator.clipboard.writeText(password.innerText);
+  copied.classList.add('active');
+  setTimeout(() => {
+    copied.classList.remove('active')
+  }, 600)
 }
 
 copy.addEventListener('click', copyToClipboard);
